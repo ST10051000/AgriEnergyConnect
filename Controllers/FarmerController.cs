@@ -3,10 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgriEnergyConnectPlatform.Controllers
 {
-    [Authorize(Roles ="Employee")]
+   // [Authorize(Roles ="Employee")]
     public class FarmerController : Controller
     {
-        public IActionResult GetAll()
+        public IActionResult AddFarmer()
+        {
+            return View();
+        }
+
+        public IActionResult DisplayFarmer()
         {
             return View();
         }
